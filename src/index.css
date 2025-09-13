@@ -1,0 +1,165 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sistema Base */
+    --background: 210 25% 98%;
+    --foreground: 220 30% 25%;
+    --card: 210 25% 96%;
+    --card-foreground: 220 30% 25%;
+    --popover: 210 25% 96%;
+    --popover-foreground: 220 30% 25%;
+    
+    /* Paleta Principal - Sistema Azul/Cinza/Branco */
+    --primary: 220 35% 65%;
+    --primary-foreground: 210 25% 98%;
+    --secondary: 210 20% 90%;
+    --secondary-foreground: 220 30% 35%;
+    --muted: 210 20% 88%;
+    --muted-foreground: 220 20% 45%;
+    --accent: 210 30% 85%;
+    --accent-foreground: 220 30% 25%;
+    
+    /* Estados e Funcionalidades */
+    --destructive: 0 45% 65%;
+    --destructive-foreground: 210 25% 98%;
+    --border: 210 20% 86%;
+    --input: 210 20% 86%;
+    --ring: 220 35% 65%;
+    
+    /* Charts - Tons de Azul/Cinza */
+    --chart-1: 210 40% 75%;
+    --chart-2: 220 35% 70%;
+    --chart-3: 210 30% 80%;
+    --chart-4: 220 25% 85%;
+    --chart-5: 210 20% 90%;
+    --radius: 0.5rem;
+    
+    /* Sistema de Cores Centralizado */
+    /* Azul Pastel - Cores Primárias */
+    --pastel-blue-light: 210 40% 85%;
+    --pastel-blue-medium: 220 35% 70%;
+    --pastel-blue-dark: 230 40% 55%;
+    
+    /* Cinza Pastel - Cores Secundárias */
+    --pastel-gray-light: 210 15% 95%;
+    --pastel-gray-medium: 210 20% 85%;
+    --pastel-white: 210 25% 98%;
+    
+    /* Efeito Vidro */
+    --glass-bg: 210 25% 98% / 0.1;
+    --glass-border: 220 35% 75% / 0.2;
+    
+    /* Sidebar */
+    --sidebar-background: 220 30% 15%;
+    --sidebar-foreground: 210 25% 95%;
+    --sidebar-primary: 210 40% 75%;
+    --sidebar-primary-foreground: 220 30% 15%;
+    --sidebar-accent: 210 30% 30%;
+    --sidebar-accent-foreground: 210 25% 95%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 210 40% 75%;
+  }
+
+  .dark {
+    /* Sistema Base - Modo Escuro */
+    --background: 220 30% 15%;
+    --foreground: 210 25% 95%;
+    --card: 220 25% 18%;
+    --card-foreground: 210 25% 95%;
+    --popover: 220 25% 18%;
+    --popover-foreground: 210 25% 95%;
+    
+    /* Paleta Principal - Modo Escuro */
+    --primary: 210 40% 75%;
+    --primary-foreground: 220 30% 15%;
+    --secondary: 220 20% 25%;
+    --secondary-foreground: 210 25% 95%;
+    --muted: 220 20% 22%;
+    --muted-foreground: 210 20% 65%;
+    --accent: 210 30% 30%;
+    --accent-foreground: 210 25% 95%;
+    
+    /* Estados e Funcionalidades - Modo Escuro */
+    --destructive: 0 45% 65%;
+    --destructive-foreground: 210 25% 95%;
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 210 40% 75%;
+    
+    /* Charts - Modo Escuro */
+    --chart-1: 210 35% 60%;
+    --chart-2: 220 30% 55%;
+    --chart-3: 210 25% 65%;
+    --chart-4: 220 20% 70%;
+    --chart-5: 210 15% 75%;
+    
+    /* Cores Pastéis - Modo Escuro */
+    --pastel-blue-light: 210 35% 45%;
+    --pastel-blue-medium: 220 30% 35%;
+    --pastel-blue-dark: 230 35% 25%;
+    --pastel-gray-light: 210 15% 20%;
+    --pastel-gray-medium: 210 20% 25%;
+    --pastel-white: 210 25% 90%;
+    
+    /* Efeito Vidro - Modo Escuro */
+    --glass-bg: 220 30% 15% / 0.1;
+    --glass-border: 210 35% 45% / 0.2;
+    
+    /* Sidebar - Modo Escuro */
+    --sidebar-background: 220 30% 15%;
+    --sidebar-foreground: 210 25% 95%;
+    --sidebar-primary: 210 40% 75%;
+    --sidebar-primary-foreground: 220 30% 15%;
+    --sidebar-accent: 210 30% 30%;
+    --sidebar-accent-foreground: 210 25% 95%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 210 40% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

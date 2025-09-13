@@ -1,0 +1,53 @@
+
+{
+  "name": "Otavia - Assistente LGPD",
+  "short_name": "Otavia",
+  "description": "Assistente virtual especializada em LGPD e proteção de dados",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#7c3aed",
+  "theme_color": "#ec4899",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/lovable-uploads/fda6d872-8f07-4e11-96aa-57c01e39f04b.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/fda6d872-8f07-4e11-96aa-57c01e39f04b.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chat LGPD",
+      "short_name": "Chat",
+      "description": "Abrir chat direto para consultas LGPD",
+      "url": "/?chat=true",
+      "icons": [
+        {
+          "src": "/lovable-uploads/fda6d872-8f07-4e11-96aa-57c01e39f04b.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/lovable-uploads/8a34a6a1-70cc-4aa7-a7d2-0f94c25f3427.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
