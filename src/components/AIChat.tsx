@@ -126,9 +126,9 @@ const AIChat = ({
       const agentName = currentMode === 'flash' ? 'Flash' : 
                        currentMode === 'doneda' ? 'Doneda' : 
                        currentMode === 'pro' ? 'Pro' : 'Flash';
-      return `Análise da OtavIA: ${agentName}`;
+      return `Análise do Presidente: ${agentName}`;
     }
-    return 'Análise da OtavIA: Flash';
+    return 'Análise do Presidente: Flash';
   };
 
   return (
@@ -165,7 +165,7 @@ const AIChat = ({
               <Bot className={`w-8 h-8 text-pastel-blue-medium transition-all duration-500 ${isLoading ? 'animate-float animate-pulse' : 'hover:scale-110'}`} />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white">OtavIA - Assistente Virtual</h3>
+              <h3 className="text-xl font-bold text-white">Presidente - Assistente Virtual</h3>
               {selectedContext && isContextMode && (
                  <p className="text-pastel-blue-light text-sm mt-1">
                   Contexto: {selectedContext}
@@ -252,7 +252,7 @@ const AIChat = ({
                 onClick={handleOtavIAQuery} 
                 disabled={isLoading}
                 size="sm"
-                title="Otavia Pro"
+                title="Presidente Pro"
               >
                 <Brain className="w-3 h-3" />
                 {!isMobile && (
@@ -282,7 +282,7 @@ const AIChat = ({
                 onClick={handleSendQuery} 
                 disabled={isLoading}
                 size="sm"
-                title="Otavia Flash"
+                title="Presidente Flash"
               >
                 <Send className="w-3 h-3" />
                 {!isMobile && (

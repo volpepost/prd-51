@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Sistema Base */
-    --background: 210 25% 98%;
+    --background: 220 30% 20%;
     --foreground: 220 30% 25%;
     --card: 210 25% 96%;
     --card-foreground: 220 30% 25%;

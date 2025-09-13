@@ -46,11 +46,11 @@ const IndexFooter = () => {
             <button
               onClick={handleOctopusClick}
               className="opacity-50 hover:opacity-70 transition-opacity duration-300 cursor-pointer flex-shrink-0"
-              title="Sobre a OtavIA"
+              title="Sobre o Presidente"
             >
               <ImageDebug
                 src="/lovable-uploads/header-owl.png"
-                alt="OtavIA - Coruja inteligente"
+                alt="Presidente - Coruja inteligente"
                 width="16"
                 height="16"
                 className="w-4 h-4"
@@ -62,7 +62,7 @@ const IndexFooter = () => {
             <p className={`text-pastel-blue-dark text-center ${
               isMobile ? 'text-xs' : 'text-sm'
             }`}>
-              OtavIA oferece análise técnica especializada em LGPD e não substitui decisões oficiais ou pareceres jurídicos formais.
+              Presidente oferece análise técnica especializada em LGPD e não substitui decisões oficiais ou pareceres jurídicos formais.
             </p>
             
             <button

@@ -121,7 +121,7 @@ const Header = ({ onServiceClick, onDebugClick }: HeaderProps) => {
               variant="ghost"
               size="sm"
               className="backdrop-blur-glass bg-imetro-glass border-imetro-glass-border hover:bg-pastel-white/20 hover:border-pastel-blue-light/40 text-pastel-white/80 hover:text-pastel-white h-10 w-10 p-0 rounded-xl transition-all duration-300 hover:scale-110"
-              title="Baixar App Otavia"
+              title="Baixar App Presidente"
             >
               <Download className="w-4 h-4" />
             </Button>
@@ -164,7 +164,7 @@ const Header = ({ onServiceClick, onDebugClick }: HeaderProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <div className="lg:col-span-3"></div>
             <div className="lg:pl-2 xl:pl-8 flex justify-start">
-              <div className="backdrop-blur-glass bg-blue-500/20 border-blue-300/30 px-6 py-3 rounded-lg flex flex-col items-center space-y-2 w-full">
+              <div className="backdrop-blur-glass bg-blue-500/40 border-blue-300/40 px-6 py-3 rounded-lg flex flex-col items-center space-y-2 w-full">
                 <img 
                   src="/lovable-uploads/da4fe42d-bb2a-4385-8e4d-e60267c3257e.png" 
                   alt="Santa Catarina Logo" 
