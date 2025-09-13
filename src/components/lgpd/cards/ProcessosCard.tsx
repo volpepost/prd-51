@@ -25,13 +25,13 @@ const ProcessosCard = ({ onClick }: ProcessosCardProps) => {
             variant="secondary" 
             className="backdrop-blur-glass bg-gradient-to-tl from-pastel-blue-dark/80 to-pastel-blue-medium/80 text-white font-bold text-xs w-7 h-6 rounded-md flex items-center justify-center shadow-lg transform skew-x-12"
           >
-            L
+            P
           </Badge>
         </div>
 
         <div className="text-center space-y-3">
-          <Settings className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">PROCESSOS</h3>
+          <Settings className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">PROCESSOS</h3>
           <p className="text-pastel-blue-medium text-xs">Fluxos de proteção</p>
         </div>
 

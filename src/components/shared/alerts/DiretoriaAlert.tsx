@@ -62,8 +62,8 @@ const DiretoriaAlert = ({ onClick, onDebugClick, headerMode = false }: Diretoria
   const getColorClasses = () => {
     if (headerMode) {
       return {
-        bg: 'bg-blue-600/30',
-        border: 'border-blue-400/40',
+        bg: 'bg-blue-600/40',
+        border: 'border-blue-400/50',
         icon: 'text-white',
         title: 'text-yellow-400',
         desc: 'text-white'
@@ -159,7 +159,7 @@ const DiretoriaAlert = ({ onClick, onDebugClick, headerMode = false }: Diretoria
             <div className="flex items-center">
               <div className="flex items-center space-x-3">
                 <IconComponent className={`w-6 h-6 ${colors.icon} ${isChanged ? 'animate-blink-icon' : ''}`} />
-                <h3 className="font-bold text-yellow-400">{data.titulo}</h3>
+                <h3 className="font-bold" style={{color: 'hsl(48 100% 80%)'}}>{data.titulo}</h3>
               </div>
             </div>
           <div className="flex-1 relative pb-4">

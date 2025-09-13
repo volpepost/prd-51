@@ -106,13 +106,13 @@ const Header = ({ onServiceClick, onDebugClick }: HeaderProps) => {
             </div>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue-dark/30 via-transparent to-pastel-blue-medium/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue-dark/40 via-transparent to-pastel-blue-medium/30"></div>
       </div>
       
       <div className="absolute top-4 right-6 z-10 text-right">
         <div className="flex items-center space-x-3">
           <div>
-            <span className="text-xs font-medium text-pastel-white/90 block">OtavIA versão 2.0</span>
+            <span className="text-xs font-medium text-pastel-white/90 block">Presidente versão 2.0</span>
             <span className="text-xs font-medium text-pastel-blue-light block mt-1">{currentDate}</span>
           </div>
           <div className="flex items-center space-x-2">
@@ -130,7 +130,7 @@ const Header = ({ onServiceClick, onDebugClick }: HeaderProps) => {
       </div>
       
       {/* Alert Cards no lado esquerdo - apenas desktop */}
-      <div className="absolute top-4 left-6 z-10 hidden lg:flex flex-col space-y-3 w-96">
+      <div className="absolute top-4 left-6 z-10 hidden lg:flex flex-col space-y-3 w-[416px]">
         {onServiceClick && (
           <>
             <div className="scale-95 transform-gpu origin-top-left">

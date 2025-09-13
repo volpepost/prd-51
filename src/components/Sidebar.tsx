@@ -49,7 +49,7 @@ const Sidebar = ({ onQuestionClick }: SidebarProps) => {
   return (
     <div className="space-y-4 lg:pl-2 xl:pl-8">
       <Card className="backdrop-blur-glass bg-imetro-glass border-imetro-glass-border p-4">
-        <h3 className="font-bold text-pastel-blue-medium mb-4 text-lg">Controle de Setor</h3>
+        <h3 className="font-bold text-white mb-4 text-lg">Controle de Setor</h3>
         
         <div className="space-y-3">
           {menuItems.map((item) => {
@@ -61,7 +61,7 @@ const Sidebar = ({ onQuestionClick }: SidebarProps) => {
                 onClick={() => handleMenuClick(item.title, item.description)}
               >
                 <div className="flex items-start space-x-3">
-                  <IconComponent className={`w-5 h-5 ${item.color} mt-1 group-hover:scale-110 transition-transform flex-shrink-0`} />
+                  <IconComponent className={`w-5 h-5 text-white mt-1 group-hover:scale-110 transition-transform flex-shrink-0`} />
                   <div className="min-w-0 flex-1">
                     <h4 className="font-semibold text-pastel-blue-dark text-base">{item.title}</h4>
                     <p className="text-pastel-blue-light text-xs mt-1 break-words">{item.description}</p>
