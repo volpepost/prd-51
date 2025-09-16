@@ -16,7 +16,7 @@ const WelcomeSection = () => {
         <h2 className={`font-bold text-white mb-4 ${
           isMobile ? 'text-xl' : 'text-3xl'
         }`}>
-          Como eu posso auxiliar com LGPD hoje?
+          Como posso ajudar, Sr Presidente?
         </h2>
         <div className="flex items-center justify-center max-w-3xl mx-auto space-x-2">
           <Quote className={`text-pastel-white flex-shrink-0 ${
