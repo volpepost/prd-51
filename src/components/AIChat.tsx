@@ -183,7 +183,7 @@ const AIChat = ({
         <div className="space-y-4">
           <div className="relative">
             <Textarea 
-              placeholder={isContextMode && selectedContext ? `Digite o assunto específico sobre ${selectedContext.split(' - ')[0].toLowerCase()}...` : "Digite sua consulta sobre LGPD..."}
+              placeholder={isContextMode && selectedContext ? `Digite o assunto específico sobre ${selectedContext.split(' - ')[0].toLowerCase()}...` : "Digite sua consulta..."}
               value={query}
               onChange={e => setQuery(e.target.value)}
               className="bg-white/10 border-white/20 text-white placeholder-white/60 min-h-[80px] resize-none pr-12 focus-visible:ring-pastel-blue-medium focus-visible:ring-2 focus-visible:border-pastel-blue-medium focus-visible:ring-offset-0 transition-all duration-300 focus-visible:shadow-lg focus-visible:shadow-pastel-blue-medium/25"
