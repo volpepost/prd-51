@@ -11,7 +11,7 @@ const WelcomeSection = () => {
   
   return (
     <Card className="backdrop-blur-glass bg-pastel-blue-dark/30 border-pastel-blue-medium/30 p-6 text-center relative overflow-hidden h-[130px]">
-      <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue-dark/20 to-pastel-blue-medium/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue-dark/40 to-pastel-blue-medium/35 backdrop-blur-sm"></div>
       <div className="relative z-10 h-full flex flex-col justify-center">
         <h2 className={`font-bold text-white mb-4 ${
           isMobile ? 'text-xl' : 'text-3xl'
