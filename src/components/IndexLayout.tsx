@@ -61,7 +61,7 @@ interface IndexLayoutProps {
 
 const IndexLayout = (props: IndexLayoutProps) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[hsl(194,90%,35%)] via-[hsl(194,95%,45%)] to-[hsl(194,85%,25%)]">
+    <div className="min-h-screen bg-gradient-to-br from-[hsl(224,50%,35%)] via-[hsl(224,45%,40%)] to-[hsl(224,55%,25%)]">
       <IndexHeader onServiceClick={props.handleServiceClick} />
 
       <div className="w-full px-6">

@@ -41,9 +41,9 @@
     
     /* Sistema de Cores Centralizado */
     /* Azul Pastel - Cores Primárias */
-    --pastel-blue-light: 194 100% 75%;
-    --pastel-blue-medium: 194 95% 55%;
-    --pastel-blue-dark: 194 90% 35%;
+    --pastel-blue-light: 220 50% 75%;
+    --pastel-blue-medium: 224 45% 50%;
+    --pastel-blue-dark: 224 50% 35%;
     
     /* Amarelo mais claro para títulos */
     --yellow-light: 48 100% 80%;
@@ -54,8 +54,8 @@
     --pastel-white: 210 25% 98%;
     
     /* Efeito Vidro */
-    --glass-bg: 194 100% 98% / 0.15;
-    --glass-border: 194 95% 75% / 0.25;
+    --glass-bg: 220 50% 98% / 0.15;
+    --glass-border: 224 45% 75% / 0.25;
     
     /* Sidebar */
     --sidebar-background: 220 30% 15%;
