@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 
 interface ControleAcessoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -26,9 +26,9 @@ const ControleAcessoCard = ({ onClick }: ControleAcessoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Shield className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">CONTROLE DE ACESSO</h3>
-          <p className="text-white text-xs">Segurança e permissões</p>
+          <AlertTriangle className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-dark text-sm">PLANO DE CRISE</h3>
+          <p className="text-white text-xs">Gestão de emergências</p>
         </div>
 
         {/* Efeito de brilho no hover */}

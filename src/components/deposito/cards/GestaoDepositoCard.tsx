@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Package } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 
 interface GestaoDepositoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -26,9 +26,9 @@ const GestaoDepositoCard = ({ onClick }: GestaoDepositoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Package className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">GESTÃO DEPÓSITO</h3>
-          <p className="text-white text-xs">Controle de inventário</p>
+          <BarChart3 className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-dark text-sm">INDICADORES</h3>
+          <p className="text-white text-xs">Métricas e KPIs</p>
         </div>
 
         {/* Efeito de brilho no hover */}

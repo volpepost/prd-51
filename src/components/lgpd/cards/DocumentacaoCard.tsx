@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FileText } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 interface DocumentacaoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -30,9 +30,9 @@ const DocumentacaoCard = ({ onClick }: DocumentacaoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <FileText className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-light text-sm">DOCUMENTAÇÃO</h3>
-          <p className="text-pastel-blue-medium text-xs">Políticas e relatórios</p>
+          <Calendar className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">AGENDA</h3>
+          <p className="text-pastel-blue-medium text-xs">Agenda institucional</p>
         </div>
 
         {/* Efeito de brilho no hover */}

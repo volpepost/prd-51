@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Scale } from 'lucide-react';
+import { FolderOpen } from 'lucide-react';
 
 interface LegislacaoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -31,9 +31,9 @@ const LegislacaoCard = ({ onClick }: LegislacaoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Scale className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">LEGISLAÇÃO</h3>
-          <p className="text-white text-xs">Produtos apreendidos</p>
+          <FolderOpen className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-dark text-sm">PROJETOS</h3>
+          <p className="text-white text-xs">Gestão de projetos</p>
         </div>
 
         {/* Efeito de brilho no hover */}

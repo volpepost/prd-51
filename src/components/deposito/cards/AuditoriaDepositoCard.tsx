@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Search } from 'lucide-react';
+import { ClipboardCheck } from 'lucide-react';
 
 interface AuditoriaDepositoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -26,8 +26,8 @@ const AuditoriaDepositoCard = ({ onClick }: AuditoriaDepositoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Search className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">AUDITORIA DEPÓSITO</h3>
+          <ClipboardCheck className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-dark text-sm">AUDITORIA</h3>
           <p className="text-white text-xs">Verificação e conformidade</p>
         </div>
 

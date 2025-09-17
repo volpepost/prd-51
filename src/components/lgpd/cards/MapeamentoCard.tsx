@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database } from 'lucide-react';
+import { Target } from 'lucide-react';
 
 interface MapeamentoCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -26,9 +26,9 @@ const MapeamentoCard = ({ onClick }: MapeamentoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Database className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-light text-sm">MAPEAMENTO</h3>
-          <p className="text-pastel-blue-medium text-xs">Inventário de dados</p>
+          <Target className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">PLANEJAMENTO</h3>
+          <p className="text-pastel-blue-medium text-xs">Estratégias e metas</p>
         </div>
 
         {/* Efeito de brilho no hover */}

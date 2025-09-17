@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield } from 'lucide-react';
+import { FileBarChart } from 'lucide-react';
 
 interface IncidentesCardProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -31,9 +31,9 @@ const IncidentesCard = ({ onClick }: IncidentesCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <Shield className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-light text-sm">FISCALIZAÇÃO</h3>
-          <p className="text-pastel-blue-medium text-xs">Sanções e compliance</p>
+          <FileBarChart className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">RELATÓRIO GABINETE</h3>
+          <p className="text-pastel-blue-medium text-xs">Relatórios executivos</p>
         </div>
 
         {/* Efeito de brilho no hover */}
