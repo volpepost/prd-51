@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Bot, Send, HelpCircle, Shield, Brain, Mic, MicOff, X, Copy } from 'lucide-react';
+import { Bot, Send, HelpCircle, Crown, Brain, Mic, MicOff, X, Copy } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { useTextToSpeech } from '@/hooks/useTextToSpeech';
@@ -162,7 +162,7 @@ const AIChat = ({
                 </div>
               )}
               
-              <Bot className={`w-8 h-8 text-pastel-blue-medium transition-all duration-500 ${isLoading ? 'animate-float animate-pulse' : 'hover:scale-110'}`} />
+              <Bot className={`w-8 h-8 text-cyan-400 transition-all duration-500 ${isLoading ? 'animate-float animate-pulse' : 'hover:scale-110'}`} />
             </div>
             <div>
               <h3 className="text-xl font-bold text-white">Presidente - Assistente Virtual</h3>
@@ -267,26 +267,26 @@ const AIChat = ({
                 onClick={handleDonedaQuery} 
                 disabled={isLoading}
                 size="sm"
-                title="Modo Doneda"
+                title="Modo Presidente"
               >
-                <Shield className="w-3 h-3" />
+                <Crown className="w-3 h-3" />
                 {!isMobile && (
                   <span className="ml-1 text-xs">
-                    {isLoadingDoneda ? "Consultando..." : "Doneda"}
+                    {isLoadingDoneda ? "Consultando..." : "Presidente"}
                   </span>
                 )}
               </Button>
               <Button 
-                className="border-pastel-blue-light/50 text-pastel-blue-medium hover:bg-pastel-blue-light/20 hover:border-pastel-blue-medium/70 bg-pastel-blue-light/20 hover:shadow-md hover:shadow-pastel-blue-light/20 transition-all duration-300" 
+                className="border-white/50 text-white hover:bg-white/20 hover:border-white/70 bg-white/10 hover:shadow-md hover:shadow-white/20 transition-all duration-300" 
                 variant="outline" 
                 onClick={handleSendQuery} 
                 disabled={isLoading}
                 size="sm"
                 title="Presidente Flash"
               >
-                <Send className="w-3 h-3" />
+                <Send className="w-3 h-3 text-white" />
                 {!isMobile && (
-                  <span className="ml-1 text-xs">
+                  <span className="ml-1 text-xs text-white">
                     {isLoadingGeneral ? "Processando..." : "Flash"}
                   </span>
                 )}
@@ -329,7 +329,7 @@ const AIChat = ({
               <div className="flex items-start justify-between mb-2 pr-8">
                 <div className="flex items-center space-x-3">
                   <Bot className={`w-8 h-8 flex-shrink-0 transition-all duration-500 ${
-                    isDarkResponseTheme ? 'text-pastel-blue-medium' : 'text-pastel-blue-dark'
+                    isDarkResponseTheme ? 'text-cyan-400' : 'text-cyan-600'
                   } ${isLoading ? 'animate-float animate-pulse' : ''}`} />
                   <h4 className={`font-bold text-xl ${
                     isDarkResponseTheme ? 'text-white' : 'text-gray-800'
