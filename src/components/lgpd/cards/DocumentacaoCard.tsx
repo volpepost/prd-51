@@ -32,7 +32,7 @@ const DocumentacaoCard = ({ onClick }: DocumentacaoCardProps) => {
         <div className="text-center space-y-3">
           <Calendar className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
           <h3 className="font-bold text-pastel-blue-light text-sm">AGENDA</h3>
-          <p className="text-pastel-blue-medium text-xs">Agenda institucional</p>
+          <p className="text-white text-xs">Agenda institucional</p>
         </div>
 
         {/* Efeito de brilho no hover */}

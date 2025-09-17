@@ -28,7 +28,7 @@ const MapeamentoCard = ({ onClick }: MapeamentoCardProps) => {
         <div className="text-center space-y-3">
           <Target className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
           <h3 className="font-bold text-pastel-blue-light text-sm">PLANEJAMENTO</h3>
-          <p className="text-pastel-blue-medium text-xs">Estratégias e metas</p>
+          <p className="text-white text-xs">Estratégias e metas</p>
         </div>
 
         {/* Efeito de brilho no hover */}

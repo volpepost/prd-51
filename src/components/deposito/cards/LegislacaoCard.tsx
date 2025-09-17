@@ -31,8 +31,8 @@ const LegislacaoCard = ({ onClick }: LegislacaoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <FolderOpen className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">PROJETOS</h3>
+          <FolderOpen className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">PROJETOS</h3>
           <p className="text-white text-xs">Gestão de projetos</p>
         </div>
 

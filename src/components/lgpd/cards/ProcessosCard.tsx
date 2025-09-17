@@ -32,7 +32,7 @@ const ProcessosCard = ({ onClick }: ProcessosCardProps) => {
         <div className="text-center space-y-3">
           <Settings className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
           <h3 className="font-bold text-pastel-blue-light text-sm">PROCESSOS</h3>
-          <p className="text-pastel-blue-medium text-xs">Fluxos de proteção</p>
+          <p className="text-white text-xs">Fluxos de proteção</p>
         </div>
 
         {/* Efeito de brilho no hover */}

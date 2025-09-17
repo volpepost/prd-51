@@ -26,8 +26,8 @@ const GestaoDepositoCard = ({ onClick }: GestaoDepositoCardProps) => {
         </div>
 
         <div className="text-center space-y-3">
-          <BarChart3 className="w-8 h-8 text-pastel-blue-dark mx-auto group-hover:scale-110 transition-transform" />
-          <h3 className="font-bold text-pastel-blue-dark text-sm">INDICADORES</h3>
+          <BarChart3 className="w-8 h-8 text-pastel-blue-light mx-auto group-hover:scale-110 transition-transform" />
+          <h3 className="font-bold text-pastel-blue-light text-sm">INDICADORES</h3>
           <p className="text-white text-xs">Métricas e KPIs</p>
         </div>
 
