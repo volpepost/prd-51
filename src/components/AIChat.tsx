@@ -247,31 +247,31 @@ const AIChat = ({
                 onRemove={removeAttachedFile} 
               />
               <Button 
-                className="border-pastel-blue-dark/60 text-pastel-blue-light hover:bg-pastel-blue-dark/30 hover:border-pastel-blue-medium/80 bg-pastel-blue-dark/30 hover:shadow-md hover:shadow-pastel-blue-dark/20 transition-all duration-300" 
+                className="border-white/50 text-white hover:bg-white/20 hover:border-white/70 bg-white/10 hover:shadow-md hover:shadow-white/20 transition-all duration-300" 
                 variant="outline" 
                 onClick={handleOtavIAQuery} 
                 disabled={isLoading}
                 size="sm"
                 title="Presidente Pro"
               >
-                <Brain className="w-3 h-3" />
+                <Brain className="w-3 h-3 text-white" />
                 {!isMobile && (
-                  <span className="ml-1 text-xs">
+                  <span className="ml-1 text-xs text-white">
                     {isLoadingOtavIA ? "Analisando..." : "Pro"}
                   </span>
                 )}
               </Button>
               <Button 
-                className="border-pastel-blue-medium/60 text-pastel-blue-light hover:bg-pastel-blue-medium/30 hover:border-pastel-blue-light/80 bg-pastel-blue-medium/30 hover:shadow-md hover:shadow-pastel-blue-medium/20 transition-all duration-300" 
+                className="border-white/50 text-white hover:bg-white/20 hover:border-white/70 bg-white/10 hover:shadow-md hover:shadow-white/20 transition-all duration-300" 
                 variant="outline" 
                 onClick={handleDonedaQuery} 
                 disabled={isLoading}
                 size="sm"
                 title="Modo Presidente"
               >
-                <Crown className="w-3 h-3" />
+                <Crown className="w-3 h-3 text-white" />
                 {!isMobile && (
-                  <span className="ml-1 text-xs">
+                  <span className="ml-1 text-xs text-white">
                     {isLoadingDoneda ? "Consultando..." : "Presidente"}
                   </span>
                 )}
