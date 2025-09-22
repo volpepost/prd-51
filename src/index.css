@@ -143,6 +143,23 @@
   .animate-slide-up {
     animation: slideUp 0.4s ease-out;
   }
+
+  /* Common section styles */
+  .section-card {
+    @apply relative overflow-hidden border-0 bg-gradient-to-br from-white to-gray-50/80 hover:from-white hover:to-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02];
+  }
+
+  .section-card-icon {
+    @apply relative flex-shrink-0 p-2 sm:p-3 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300;
+  }
+
+  .section-close-btn {
+    @apply absolute top-4 right-4 z-20 p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-lg;
+  }
+
+  .section-header {
+    @apply backdrop-blur-md bg-gradient-to-r from-pastel-blue-light/20 via-pastel-blue-medium/20 to-pastel-gray-medium/20 border-b border-white/30 p-6 -m-4 sm:-m-6 lg:-m-8 mb-6 lg:mb-8 rounded-t-2xl;
+  }
 }
 
 @keyframes scaleIn {

@@ -1,16 +1,15 @@
 
-import { useState } from 'react';
 import { useSectionVisibility } from '@/hooks/useSectionVisibility';
 import { useOtaviaQueries } from '@/hooks/useOtaviaQueries';
 import { usePdfExtraction } from '@/hooks/usePdfExtraction';
+import { useCommonState } from '@/hooks/useCommonState';
 import { useIndexEventListeners } from '@/hooks/useIndexEventListeners';
 
 export const useIndexData = () => {
   const sectionVisibility = useSectionVisibility();
   const otaviaQueries = useOtaviaQueries();
   const pdfExtraction = usePdfExtraction();
-  
-  const [attachedFile, setAttachedFile] = useState<File | null>(null);
+  const { attachedFile, setAttachedFile } = useCommonState();
 
   // Add event listeners for section management
   useIndexEventListeners(

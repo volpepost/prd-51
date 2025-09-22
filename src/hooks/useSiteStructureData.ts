@@ -2,12 +2,12 @@
 import { usePdfExtraction } from "@/hooks/usePdfExtraction";
 import { useSectionVisibility } from "@/hooks/useSectionVisibility";
 import { useOtaviaQueries } from "@/hooks/useOtaviaQueries";
-import { useIndexState } from "@/hooks/useIndexState";
+import { useCommonState } from "@/hooks/useCommonState";
 import { useIndexEventListeners } from "@/hooks/useIndexEventListeners";
 import { useDebugBubble } from "@/hooks/useDebugBubble";
 
 export const useSiteStructureData = () => {
-  const { attachedFile, setAttachedFile } = useIndexState();
+  const { attachedFile, setAttachedFile } = useCommonState();
 
   const {
     debugBubble,

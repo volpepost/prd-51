@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 
-export const useIndexState = () => {
+export const useCommonState = () => {
   const [attachedFile, setAttachedFile] = useState<File | null>(null);
 
   return {
