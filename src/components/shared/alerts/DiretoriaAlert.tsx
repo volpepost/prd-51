@@ -4,7 +4,7 @@ import { Megaphone, Users, Bell, Shield, CheckCircle, RefreshCw } from 'lucide-r
 import { Phone } from 'lucide-react';
 import { useGoogleSheetsData } from '@/hooks/useGoogleSheetsData';
 import { useAlertCarousel } from '@/hooks/useAlertCarousel';
-import DebugSection from "@/components/structure/DebugSection";
+
 
 interface DiretoriaAlertProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -185,18 +185,6 @@ const DiretoriaAlert = ({ onClick, onDebugClick, headerMode = false }: Diretoria
     </Card>
   );
 
-  // Se onDebugClick foi fornecido, envolver com DebugSection
-  if (onDebugClick) {
-    return (
-      <DebugSection
-        title="Diretoria Alert Card"
-        description="Card de alerta da diretoria individual"
-        onDebugClick={onDebugClick}
-      >
-        {cardContent}
-      </DebugSection>
-    );
-  }
 
   return cardContent;
 };

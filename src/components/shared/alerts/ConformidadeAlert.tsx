@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Bell, AlertTriangle, Shield, CheckCircle, RefreshCw, FilePen } from 'lucide-react';
 import { useGoogleSheetsData } from '@/hooks/useGoogleSheetsData';
 import { useAlertCarousel } from '@/hooks/useAlertCarousel';
-import DebugSection from "@/components/structure/DebugSection";
+
 
 interface ConformidadeAlertProps {
   onClick: (serviceName: string, serviceDescription: string) => void;
@@ -177,18 +177,6 @@ const ConformidadeAlert = ({ onClick, onShowYoutube, onDebugClick, headerMode = 
     </Card>
   );
 
-  // Se onDebugClick foi fornecido, envolver com DebugSection
-  if (onDebugClick) {
-    return (
-      <DebugSection
-        title="Lembrete Alert Card"
-        description="Card de alerta de lembrete individual"
-        onDebugClick={onDebugClick}
-      >
-        {cardContent}
-      </DebugSection>
-    );
-  }
 
   return cardContent;
 };

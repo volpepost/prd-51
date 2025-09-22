@@ -2,11 +2,11 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Quote } from 'lucide-react';
-import { useMotivationalQuote } from "@/hooks/useMotivationalQuote";
+
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const WelcomeSection = () => {
-  const { quote } = useMotivationalQuote();
+  const quote = "Bem-vindo ao sistema de conformidade LGPD e Depósito Legal";
   const isMobile = useIsMobile();
   
   return (
